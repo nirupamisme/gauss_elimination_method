@@ -105,6 +105,13 @@ int main() {
 
     // Close the file for the output
     MyFile.close();
+
+    // Free the memory
+    delete[] sol;
+    for (int i = 0; I < n; i++) {
+        delete[] new_matrix[i];
+    }
+    delete[] new_matrix;
       
     return 0;
 }
